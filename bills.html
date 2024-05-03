@@ -612,7 +612,7 @@
                             ? compareDiff(
                                 billsData[idx].versions[0].content || '',
                                 billsData[idx].versions[ver].content || ''
-                              )
+                              )?.replace(/\n|\r/g, '<br>')
                             : '無'
                         "></div>
                         <div
